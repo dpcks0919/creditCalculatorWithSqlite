@@ -18,7 +18,7 @@
   1. DDL(Data Definition Language) - 데이터 정의 언어
   테이블을 생성, 수정, 삭제하는 언어
     
-    1. 테이블 생성 쿼리
+    - 테이블 생성 쿼리
     CREATE TABLE IF NOT EXISTS PERSON (  
            ID  INTEGER  PRIMARY KEY  AUTOINCREMENT,
            NAME     TEXT     NOT NULL, 
@@ -28,27 +28,27 @@
            GRADE     TEXT     NOT NULL, 
            REG_DATE    TEXT     NOT NULL  )
                    
-    1. 테이블 삭제 쿼리 
+    - 테이블 삭제 쿼리 
     DROP TABLE IF EXISTS TABLE
     
   2. DQL(Data Query Language) - 데이터 질의 언어
   데이터 검색 언어
   대부분 DML에 포함
     
-    1. 검색 쿼리     
+    - 검색 쿼리     
     SELECT * FROM PERSON
     
-    1. 이름 검색 쿼리
+    - 이름 검색 쿼리
     SELECT * FROM PERSON WHERE NAME = ?
     
   3. DML(Data Manipulation Language) - 데이터 조작 언어
   데이터 추가, 수정, 삭제 언어
   
-    1. 데이터 추가 쿼리    
+    - 데이터 추가 쿼리    
       INSERT INTO PERSON ( NAME, KOR_SCORE, ENG_SCORE, MATH_SCORE, GRADE, REG_DATE) VALUES (?,?,?,?,?,?)
       
-    1. 데이터 수정 쿼리
+    - 데이터 수정 쿼리
       UPDATE PERSON SET NAME = ?, KOR_SCORE = ?, ENG_SCORE = ?, MATH_SCORE = ?, GRADE = ? WHERE ID = ?
     
-    1. 데이터 삭제 쿼리
+    - 데이터 삭제 쿼리
       DELETE FROM PERSON WHERE ID = ?
