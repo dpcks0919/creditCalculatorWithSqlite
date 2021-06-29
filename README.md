@@ -10,8 +10,8 @@
   
   
  ## Sqlite 쿼리
- ### 테이블명: PERSON
- ### 칼럼 이름(타입) : ID(INTEGER), NAME(TEXT), KOR_SCORE(INTEGER), ENG_SCORE(INTEGER), MATH_SCORE(INTEGER), GRADE(TEXT), REG_DATE(TEXT)
+  * 테이블명: PERSON
+  * 칼럼 이름(타입) : ID(INTEGER), NAME(TEXT), KOR_SCORE(INTEGER), ENG_SCORE(INTEGER), MATH_SCORE(INTEGER), GRADE(TEXT), REG_DATE(TEXT)
   * PRIMARY KEY: 데이터를 유일(unique)하게 식별할수 있는 컬럼
   * AUTOINCREMENT: 데이터가 삽입될 때마다 1씩 증가시켜주는 칼럼, 삽입 시 따로 값을 지정해주지 않아도 된다.
   
