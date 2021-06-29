@@ -19,6 +19,7 @@
   - NOT NULL: NULL 값을 가질 수 없는 칼럼, 값을 꼭 지정해서 삽입해주어야 한다.
   
   1. DDL(Data Definition Language) - 데이터 정의 언어
+  
   테이블을 생성, 수정, 삭제하는 언어
     
     - 테이블 생성 쿼리
@@ -35,7 +36,9 @@
     DROP TABLE IF EXISTS TABLE
     
   2. DQL(Data Query Language) - 데이터 질의 언어
+  
   데이터 검색 언어
+  
   대부분 DML에 포함
     
     - 검색 쿼리     
@@ -45,6 +48,7 @@
     SELECT * FROM PERSON WHERE NAME = ?
     
   3. DML(Data Manipulation Language) - 데이터 조작 언어
+  
   데이터 추가, 수정, 삭제 언어
   
     - 데이터 추가 쿼리    
