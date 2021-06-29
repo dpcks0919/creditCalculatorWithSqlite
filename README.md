@@ -3,7 +3,7 @@
 ## 개발 step
 
 1. 새 프로젝트 생성 (File > New > Project.. > Gradle > Java) 후 creditCalculatorWithFile 복사
-  - https://mvnrepository.com 에서 sqlite-jdbc 검색 후 버전 고르고 gradle 복사 --> build.gradle 파일에서 dependencies에 추가
+    - https://mvnrepository.com 에서 sqlite-jdbc 검색 후 버전 고르고 gradle 복사 --> build.gradle 파일에서 dependencies에 추가
 
 2. SQLiteManager를 통해 Connection 생성 후, DDLService(테이블 생성), DMLService(데이터 생성, 수정, 삭제), DQLService(데이터 조회)를 하나의 Connection으로 생성 (Singleton 방식)
 3. ArrayList에 조회, 추가, 수정, 삭제 하는 부분을 DDLService, DMLSerive, DQLService에서 PreparedStatement 객체 생성 후 쿼리를 통해 조회, 추가, 수정, 삭제 대체
