@@ -30,7 +30,7 @@
     1. 테이블 삭제 쿼리 
     DROP TABLE IF EXISTS TABLE
     
-  1. DQL(Data Query Language) - 데이터 질의 언어
+  2. DQL(Data Query Language) - 데이터 질의 언어
   데이터 검색 언어
   대부분 DML에 포함
     1. 검색 쿼리
@@ -39,7 +39,7 @@
     1. 이름 검색 쿼리
     SELECT * FROM PERSON WHERE NAME = ?
     
-  1. DML(Data Manipulation Language) - 데이터 조작 언어
+  3. DML(Data Manipulation Language) - 데이터 조작 언어
   데이터 추가, 수정, 삭제 언어
     1. 데이터 추가 쿼리
       INSERT INTO PERSON ( NAME, KOR_SCORE, ENG_SCORE, MATH_SCORE, GRADE, REG_DATE) VALUES (?,?,?,?,?,?)
