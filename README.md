@@ -5,8 +5,8 @@
 1. 새 프로젝트 생성 (File > New > Project.. > Gradle > Java) 후 creditCalculatorWithFile 복사
   - https://mvnrepository.com에서 sqlite-jdbc 검색 후 버전 고르고 gradle 복사 --> build.gradle 파일에서 dependencies에 추가
   
-1. SQLiteManager를 통해 Connection 생성 후, DDLService, DMLService, DQLService를 하나의 Connection으로 생성 (Singleton 방식)
-1. ArrayList에서 추가, 수정, 삭제 하는 부분을 DDLService, DMLSerive, DQLService에서 PreparedStatement 객체 생성 후 쿼리하는 방식으로 변경 
+2. SQLiteManager를 통해 Connection 생성 후, DDLService, DMLService, DQLService를 하나의 Connection으로 생성 (Singleton 방식)
+3. ArrayList에서 추가, 수정, 삭제 하는 부분을 DDLService, DMLSerive, DQLService에서 PreparedStatement 객체 생성 후 쿼리하는 방식으로 변경 
   * 참고 링크
   https://sas-study.tistory.com/160
   
