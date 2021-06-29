@@ -27,9 +27,7 @@ public class FileService {
                 int sum = kor_score + eng_score + math_score;
 
                 FileUtils.write (file,name + " / " + kor_score + " / " +eng_score + " / " + math_score + " / " + reg_date + "\n", true);
-
             }
-
             // fileUtils 사용
         }catch (FileNotFoundException e) {
             System.out.println("data.txt 파일이 존재하지 않습니다.");

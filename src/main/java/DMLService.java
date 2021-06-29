@@ -11,6 +11,7 @@ public class DMLService {
     final String DELETE_SQL = "DELETE FROM PERSON WHERE ID = ? ";
 
     Connection conn;
+    PreparedStatement pstmt;
 
     public DMLService(Connection conn) {
         this.conn = conn;
@@ -19,9 +20,6 @@ public class DMLService {
     // 데이터 삽입 함수
     public int insertPerson(HashMap<String, Object> dataMap) throws SQLException {
 
-        PreparedStatement pstmt = null;
-
-        //   - 입력 결과 변수
         int inserted = 0;
 
         try {
@@ -65,15 +63,12 @@ public class DMLService {
             }
         }
 
-        // 결과 반환
-        //   - 입력된 데이터 건수
+        // 결과 반환  - 입력된 데이터 건수
         return inserted;
     }
 
     // 데이터 수정 함수
     public int updatePerson(Map<String, Object> updateMap) throws SQLException {
-
-        PreparedStatement pstmt = null;
 
         //   - 수정 결과 변수
         int updated = 0;
@@ -126,7 +121,6 @@ public class DMLService {
 
         //   - 삭제 결과 변수
         int deleted = 0;
-        PreparedStatement pstmt = null;
 
         try {
             // PreparedStatement 객체 생성

@@ -8,12 +8,13 @@ public class CreditCalculator {
 
     public static void main(String[] args) throws SQLException{
 
-        Connection conn = SQLiteManager.getConnection();
         int result = -1;
+        Connection conn = SQLiteManager.getConnection();
         List<Map<String, Object>> resultList;
 
         Menu m = new Menu();
         CrudService crudService = new CrudService();
+        SearchService searchService = new SearchService();
         DDLService DDL = new DDLService(conn);
         DMLService DML = new DMLService(conn);
         DQLService DQL = new DQLService(conn);
@@ -42,7 +43,7 @@ public class CreditCalculator {
                         break;
 
                     case "3":
-                        crudService.readData(DQL);
+                        crudService.readData(DQL); // 데이터 출력
 
                         result = DML.updatePerson(crudService.updateData());
                         if( result >= 0 ) {
@@ -54,7 +55,7 @@ public class CreditCalculator {
                         break;
 
                     case "4":
-                        crudService.readData(DQL);
+                        crudService.readData(DQL); // 데이터 출력
 
                         result = DML.deletePerson(crudService.deleteData());
                         if( result >= 0 ) {
@@ -66,7 +67,7 @@ public class CreditCalculator {
                         break;
 
                     case "5":
-                        resultList = DQL.selectByName(crudService.searchByName());
+                        resultList = DQL.selectByName(searchService.searchByName());
                         DQL.printMapList(resultList);
                         break;
 

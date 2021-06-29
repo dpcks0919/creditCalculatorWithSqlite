@@ -55,7 +55,6 @@ public class CrudService {
         dataMap.put("REG_DATE" , regDate);
 
         return dataMap;
-
     }
 
     public HashMap<String, Object> updateData() {
@@ -120,23 +119,6 @@ public class CrudService {
         }
 
         return num;
-    }
-
-    public String searchByName(){
-
-        String name = null;
-
-        System.out.println("검색할 이름 입력");
-        br = new BufferedReader(new InputStreamReader(System.in));
-
-        try{
-            name = br.readLine();
-
-        }catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        return name;
     }
 
 }

@@ -7,6 +7,8 @@ public class DQLService {
     final String SELECTBYNAME_SQL = "SELECT * FROM PERSON WHERE NAME = ? ";
 
     Connection conn;
+    PreparedStatement pstmt;
+    ResultSetMetaData meta;
 
     public DQLService(Connection conn) {
         this.conn = conn;
@@ -18,9 +20,6 @@ public class DQLService {
         //   - 조회 결과 변수
         final Set<String> columnNames = new HashSet<String>();
         final List<Map<String, Object>> selected = new ArrayList<Map<String, Object>>();
-
-        PreparedStatement pstmt = null;
-        ResultSetMetaData meta = null;
 
         try {
             // PreparedStatement 객체 생성
@@ -66,8 +65,7 @@ public class DQLService {
             }
         }
 
-        // 결과 반환
-        //   - 조회된 데이터 리스트
+        // 결과 반환 - 조회된 데이터 리스트
         return selected;
     }
 
@@ -77,9 +75,6 @@ public class DQLService {
         //   - 조회 결과 변수
         final Set<String> columnNames = new HashSet<String>();
         final List<Map<String, Object>> selected = new ArrayList<Map<String, Object>>();
-
-        PreparedStatement pstmt = null;
-        ResultSetMetaData meta = null;
 
         try {
             // PreparedStatement 객체 생성
@@ -128,8 +123,7 @@ public class DQLService {
             }
         }
 
-        // 결과 반환
-        //   - 조회된 데이터 리스트
+        // 결과 반환 - 조회된 데이터 리스트
         return selected;
     }
 
