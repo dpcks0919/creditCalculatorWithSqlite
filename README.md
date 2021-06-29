@@ -10,10 +10,13 @@
   
   
  ## Sqlite 쿼리
-  * 테이블명: PERSON
-  * 칼럼 이름(타입) : ID(INTEGER), NAME(TEXT), KOR_SCORE(INTEGER), ENG_SCORE(INTEGER), MATH_SCORE(INTEGER), GRADE(TEXT), REG_DATE(TEXT)
-  * PRIMARY KEY: 데이터를 유일(unique)하게 식별할수 있는 컬럼
-  * AUTOINCREMENT: 데이터가 삽입될 때마다 1씩 증가시켜주는 칼럼, 삽입 시 따로 값을 지정해주지 않아도 된다.
+  - 테이블명: PERSON
+  - 칼럼 이름(타입) : ID(INTEGER), NAME(TEXT), KOR_SCORE(INTEGER), ENG_SCORE(INTEGER), MATH_SCORE(INTEGER), GRADE(TEXT), REG_DATE(TEXT)
+  
+  제약 조건(constrain)
+  - PRIMARY KEY: 데이터를 유일(unique)하게 식별할수 있는 컬럼
+  - AUTOINCREMENT: 데이터가 삽입될 때마다 1씩 증가시켜주는 칼럼, 데이터 삽입 시 해당 칼럼에 따로 값을 지정해주지 않아도 된다.
+  - NOT NULL: NULL 값을 가질 수 없는 칼럼, 값을 꼭 지정해서 삽입해주어야 한다.
   
   1. DDL(Data Definition Language) - 데이터 정의 언어
   테이블을 생성, 수정, 삭제하는 언어
