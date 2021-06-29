@@ -11,6 +11,12 @@
   https://sas-study.tistory.com/160
   
   
+ ## .db 파일 IntelliJ 연결하기
+ 1. Preference -> Plugins 에서 'Database Naviagator' 검색 후 설치
+ <img width="986" alt="스크린샷 2021-06-29 오후 10 51 20" src="https://user-images.githubusercontent.com/47955992/123809391-864e5100-d92c-11eb-9aeb-5f14a56438aa.png">
+
+
+  
  ## Sqlite 쿼리
   - 테이블명: PERSON
   - 칼럼 이름(타입) : ID(INTEGER), NAME(TEXT), KOR_SCORE(INTEGER), ENG_SCORE(INTEGER), MATH_SCORE(INTEGER), GRADE(TEXT), REG_DATE(TEXT)
