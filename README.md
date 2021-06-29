@@ -11,9 +11,24 @@
   https://sas-study.tistory.com/160
   
   
- ## .db 파일 IntelliJ 연결하기
+ ## .db 파일 IntelliJ 연결 후 쿼리 방법
  1. Preference -> Plugins 에서 'Database Naviagator' 검색 후 설치
  <img width="986" alt="스크린샷 2021-06-29 오후 10 51 20" src="https://user-images.githubusercontent.com/47955992/123809391-864e5100-d92c-11eb-9aeb-5f14a56438aa.png">
+
+2. View -> Tool Windows -> DB Browser 선택
+<img width="511" alt="스크린샷 2021-06-29 오후 10 51 55" src="https://user-images.githubusercontent.com/47955992/123809488-9d8d3e80-d92c-11eb-8cd4-7f844dfadaae.png">
+
+3. + 버튼을 누러 SQlite 선택
+<img width="294" alt="스크린샷 2021-06-29 오후 10 53 48" src="https://user-images.githubusercontent.com/47955992/123809795-de855300-d92c-11eb-89bd-d2712e8e6196.png">
+
+4. .db 파일을 경로 지정 후 우측 하단 OK 버튼 클릭
+<img width="631" alt="스크린샷 2021-06-29 오후 10 55 08" src="https://user-images.githubusercontent.com/47955992/123810602-80a53b00-d92d-11eb-9928-3485e424ada0.png">
+
+5. DB Browser 탭에서 연결된 Connection -> Consoles -> Connection 클릭
+<img width="295" alt="스크린샷 2021-06-29 오후 11 00 19" src="https://user-images.githubusercontent.com/47955992/123810947-c82bc700-d92d-11eb-96ac-3ab9204aa429.png">
+
+6. 우측 콘솔창에 쿼리문을 적고 초록색 실행 버튼(RUN) 클릭하면 아래 콘솔 창에 결과 출력
+<img width="939" alt="스크린샷 2021-06-29 오후 11 03 04" src="https://user-images.githubusercontent.com/47955992/123811436-31abd580-d92e-11eb-8e1b-839aee8854f2.png">
 
 
   
