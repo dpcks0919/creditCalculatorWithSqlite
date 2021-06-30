@@ -3,13 +3,69 @@
 ## 개발 step
 
 1. 새 프로젝트 생성 (File > New > Project.. > Gradle > Java) 후 creditCalculatorWithFile 복사
-  - https://mvnrepository.com 에서 sqlite-jdbc 검색 후 버전 고르고 gradle 복사 --> build.gradle 파일에서 dependencies에 추가
+    - https://mvnrepository.com 에서 sqlite-jdbc 검색 후 버전 고르고 gradle 복사 --> build.gradle 파일에서 dependencies에 추가
 
 2. SQLiteManager를 통해 Connection 생성 후, DDLService(테이블 생성), DMLService(데이터 생성, 수정, 삭제), DQLService(데이터 조회)를 하나의 Connection으로 생성 (Singleton 방식)
 3. ArrayList에 조회, 추가, 수정, 삭제 하는 부분을 DDLService, DMLSerive, DQLService에서 PreparedStatement 객체 생성 후 쿼리를 통해 조회, 추가, 수정, 삭제 대체
-  * 참고 링크 ( PrepareStatement 사용 방법)
+     * 참고 링크 ( PrepareStatement 사용 방법)
+
+       https://sas-study.tistory.com/160
+       
  
-  https://sas-study.tistory.com/160
+  ## 실행 결과
+  
+  메뉴
+  
+  <img width="209" alt="스크린샷 2021-06-30 오후 2 59 23" src="https://user-images.githubusercontent.com/47955992/123910335-42ebf500-d9b5-11eb-911f-ba1fda02088b.png">
+
+  1. CREATE 기능
+  
+  <img width="169" alt="스크린샷 2021-06-24 오후 10 01 49" src="https://user-images.githubusercontent.com/47955992/123267267-c7fb8800-d537-11eb-96d2-08782471160c.png">
+  
+  2. READ 기능
+  
+  <img width="416" alt="스크린샷 2021-06-26 오후 10 56 31" src="https://user-images.githubusercontent.com/47955992/123515289-c06fe680-d6d1-11eb-849a-1303b7202369.png">
+  
+  3. Update 기능
+  
+  <img width="412" alt="스크린샷 2021-06-26 오후 10 57 08" src="https://user-images.githubusercontent.com/47955992/123515309-d67da700-d6d1-11eb-8500-9470e31ae608.png">
+  
+  - 수정 후
+  
+  <img width="400" alt="스크린샷 2021-06-26 오후 10 57 28" src="https://user-images.githubusercontent.com/47955992/123515317-e2696900-d6d1-11eb-8bbb-2989b1a52ecc.png">
+
+  4. Delete 기능
+  
+  <img width="414" alt="스크린샷 2021-06-26 오후 10 57 50" src="https://user-images.githubusercontent.com/47955992/123515325-f01eee80-d6d1-11eb-8e54-06d58924b0ac.png">
+  
+  - 삭제 후
+ 
+  <img width="405" alt="스크린샷 2021-06-26 오후 10 58 08" src="https://user-images.githubusercontent.com/47955992/123515336-fb721a00-d6d1-11eb-8ebd-5d5a78b3837a.png">
+  
+  5. 이름 검색 기능 생성 
+  
+  <img width="399" alt="스크린샷 2021-06-24 오후 10 05 52" src="https://user-images.githubusercontent.com/47955992/123267777-5839cd00-d538-11eb-9b13-7a60d9fb4caa.png">
+  
+  6. 파일 불러오기 기능
+  - 프로그램 시작하면 바로 data.txt 파일 불러온 후 리스트에 추가 (StringTokenizer 사용)
+  - buffereReader, FileReader 등 사용
+  - commons-io 라이브러리 FileUtils 사용 (maven repository에서 commons-io 검색 후 build.gradle에 dependency 추가)
+
+  <img width="342" alt="스크린샷 2021-06-26 오후 11 02 40" src="https://user-images.githubusercontent.com/47955992/123515499-9c60d500-d6d2-11eb-9d95-403252628734.png">
+  
+  <img width="415" alt="스크린샷 2021-06-26 오후 11 03 04" src="https://user-images.githubusercontent.com/47955992/123515515-ab478780-d6d2-11eb-8dc9-abfc6e41a047.png">
+  
+  7. 파일 저장하기 기능 추가
+  - 리스트에 있는 데이터들 data.txt 파일 저장하기
+  - BufferedWriter, FileWriter 등 사용
+  - commons-io 라이브러리 FileUtils 사용 (maven repository에서 commons-io 검색 후 build.gradle에 dependency 추가)
+  - FileWriter 사용
+ 
+  <img width="423" alt="스크린샷 2021-06-26 오후 11 04 22" src="https://user-images.githubusercontent.com/47955992/123515547-d92ccc00-d6d2-11eb-99d3-a5cf27762a2f.png">
+
+  <img width="325" alt="스크린샷 2021-06-26 오후 11 04 49" src="https://user-images.githubusercontent.com/47955992/123515573-e9dd4200-d6d2-11eb-9626-66786a0fb31c.png">
+
+
   
   ## Sqlite 쿼리
   - 테이블명: PERSON
