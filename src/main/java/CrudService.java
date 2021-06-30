@@ -94,11 +94,6 @@ public class CrudService {
             grade = Person.calculateGrade(korScore, engScore, mathScore);
             updateMap.put("GRADE" , grade);
 
-            LocalDate date = LocalDate.now();
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-            regDate = date.format(formatter);
-            updateMap.put("REG_DATE" , regDate);
-
         } catch (IOException e) {
             e.printStackTrace();
         }
